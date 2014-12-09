@@ -4,7 +4,7 @@ require 'data_mapper'
 
 env = ENV['RACK_ENV'] || 'development'
 
-# we're telling datamapper to use a postgres database on localhost. The name will be "bookmark_manager_test" or "bookmark_manager_development" depending on the environment
+# we're telling datamapper to use a postgres database on localhost. The name will be "streetsmarttaskboard_" or "streetsmarttaskboard_development" depending on the environment
 DataMapper.setup(:default, "postgres://localhost/streetsmarttaskboard_#{env}")
 
 require './lib/task' # this needs to be done after datamapper is initialised
@@ -18,4 +18,11 @@ DataMapper.auto_upgrade!
 get '/' do
   @tasks = Task.all
   erb :index
+end
+
+post '/tasks' do
+  title = params["title"]
+  description = params["description"]
+  Task.create(:title => title, :description => description)
+  redirect('/')
 end
