@@ -1,0 +1,5 @@
+<ul>
+  <% @tasks.each do |task| %>
+    <li><a href="<%= task.description %>"><%= task.title %></a></li>
+  <% end %>
+</ul>

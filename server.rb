@@ -16,5 +16,6 @@ DataMapper.finalize
 DataMapper.auto_upgrade!
 
 get '/' do
-  "Harro Hadi"
+  @tasks = Task.all
+  erb :index
 end
