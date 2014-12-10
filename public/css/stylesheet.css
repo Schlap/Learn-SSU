@@ -52,6 +52,7 @@
   position: absolute;
   top: 0%;
   left: 240%;
+  display:inline-block;
 }
 
 .sub-title {
@@ -63,6 +64,24 @@
   padding-top: 8%;
   padding-left: 12.5%;
 }
+
+::-webkit-input-placeholder{
+  font-family: "AvenirLTStd-Book";
+  font-size: 1.5em;
+
+}
+
+.menu {
+  font-family: "AvenirLTStd-Book";
+  position: absolute;
+  top: 7.5%;
+  right: 40%
+}
+
+li {
+  display: inline;
+}
+
 
 .like-button {
 

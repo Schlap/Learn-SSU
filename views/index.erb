@@ -5,18 +5,23 @@
   <body>
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-    <header class="top-bar">
-      <h1 class="title">SSU Wall</h1>
-    </header>
+      <header class="top-bar">
+        <h1 class="title">SSU Wall</h1>
+        <ul class="menu">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about_us">About Us</a></li>
+          <li><a href="/gratitude">Gratitude</a></li>
+        </ul>
+      </header>
     <div class="middle-bar">
       <div class="sub-title-bar">
-        <p class="sub-title">Get a live feed of the SSU Teams Learnings of the Day.</p></div>
+        <p class="sub-title">Get a live feed of the SSU team's learnings of the day.</p>
       </div>
+    </div>
         <form action="/tasks" method="post" class="form">
-          <input type="text" name="title" class="input" placeholder="Today I learnt..">
+          <input type="text" name="title" class="input">
           <input type="submit" value="Post" class="post-button">
         </form>
-      </div>
     </div>
       <div class="ssu-app">
         <div class="container">
