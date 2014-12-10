@@ -1,0 +1,73 @@
+.top-bar {
+  background-color: #57e2ca;
+  display: block;
+  box-sizing: border-box;
+  height: 15%
+}
+
+.middle-bar {
+  background-color: #57e2ca;
+  display: block;
+  box-sizing: border-box;
+  height: 75%
+}
+
+.title {
+  font-family: "AvenirLTStd-Book";
+  font-size: 3.75em;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding-top: 2%;
+  padding-left: 12.5%;
+}
+
+.form {
+  position: absolute;
+  top: 40%;
+  left: 12.5%;
+
+
+}
+
+.input{
+  width: 220%;
+  height: 50px;
+  color: #282828;
+  border: none;
+  font-family: "AvenirLTStd-Book";
+  border-radius: 5px;
+}
+
+.post-button {
+  color: #fff;
+  width: 100%;
+  border: none;
+  height: 50px;
+  box-shadow: none;
+  text-shadow: none;
+  background-image: none;
+  background-color: #708a86;
+  border-radius: 5px;
+  position: absolute;
+  top: 0%;
+  left: 240%;
+}
+
+.sub-title {
+  font-family: "AvenirLTStd-Book";
+  font-size: 1.75em;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding-top: 8%;
+  padding-left: 12.5%;
+}
+
+.like-button {
+
+}
+
+.like-count {
+
+}

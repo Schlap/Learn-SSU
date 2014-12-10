@@ -1,23 +1,55 @@
-<html>
-<head>
-<title>SSU Task Board</title>
-</head>
-<body>
-  <h1>SSU Task Board</h1>
-  <div class="new-task">
-    <form action="/tasks" method="post">
-      Title: <input type="text" name="title">
-      Description: <input type="text" name="description">
-      Tags: <input type="text" name="tags">
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-  <div class="task-feed">
-    <ul>
-      <% @tasks.each do |task| %>
-        <li><a href="<%= task.description %>"><%= task.title %></a></li>
-      <% end %>
-    </ul>
-  </div>
-</body>
+<html lang="en">
+  <head>
+    <title>SSU Chat Room</title>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+    <header class="top-bar">
+      <h1 class="title">SSU Wall</h1>
+    </header>
+    <div class="middle-bar">
+      <div class="sub-title-bar">
+        <p class="sub-title">Get a live feed of the SSU Teams Learnings of the Day.</p></div>
+      </div>
+        <form action="/tasks" method="post" class="form">
+          <input type="text" name="title" class="input" placeholder="Today I learnt..">
+          <input type="submit" value="Post" class="post-button">
+        </form>
+      </div>
+    </div>
+      <div class="ssu-app">
+        <div class="container">
+        <ul>
+            <% @tasks.each do |task| %>
+            <div class="row">
+              <li><%= task.title %></a></li>
+                <% if @tasks.any? %>
+                <li><a href="#" class="like-button">Like</a></li>
+                <p class="like-count">0</p><p> Like</p>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--
+      <script>
+
+      $(document).ready(function() {
+        $(".like-button").on('click', function(event){
+          event.preventDefault();
+          likeCounter();
+        });
+
+        var counter = 0;
+        function likeCounter (){
+          counter++;
+          $(".like-count").text(counter);
+        }
+      });
+
+      </script> -->
+  </body>
 </html>

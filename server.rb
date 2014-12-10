@@ -11,6 +11,8 @@ require './lib/task' # this needs to be done after datamapper is initialised
 
 require './lib/tag' # this needs to be done after datamapper has initialised
 
+require './lib/like'
+
 # After declaring your models, you should finalise them
 DataMapper.finalize
 
@@ -19,15 +21,12 @@ DataMapper.auto_upgrade!
 
 get '/' do
   @tasks = Task.all
+  @likes = Like.all
   erb :index
 end
 
 post '/tasks' do
     title = params["title"]
-    description = params["description"]
-  tags = params["tags"].split(" ").map do |tag|
-    Tag.first_or_create(:text => tag)
-  end
-    Task.create(:title => title, :description => description, :tags => tags)
+    Task.create(:title => title)
     redirect('/')
 end
