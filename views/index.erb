@@ -1,27 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SSU Chat Room</title>
+    <title>SSU</title>
+
   </head>
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   <body>
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+
+
+
+
       <header class="top-bar">
-        <h1 class="title">SSU Wall</h1>
+        <a href='/' class="title">Learn SSU.</a>
+      <div class="nav-bar-menu">
         <ul class="menu">
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about_us">About Us</a></li>
-          <li><a href="/gratitude">Gratitude</a></li>
+          <li><a href="/" id="home-button">Home</a></li>
+          <li><a href="/about" id="about-button">About Us</a></li>
+          <li><a href="/contact" id="contact-button">Contact</a></li>
         </ul>
+      </div>
       </header>
     <div class="middle-bar">
       <div class="sub-title-bar">
-        <p class="sub-title">Get a live feed of the SSU team's learnings of the day.</p>
+        <p class="sub-title">Get a live feed of the SSU team's daily learnings.</p>
       </div>
     </div>
         <form action="/tasks" method="post" class="form">
           <input type="text" name="title" class="input">
-          <input type="submit" value="Post" class="post-button">
+          <input type="submit" value="Learnt" class="post-button">
         </form>
+        <div
     </div>
       <div class="ssu-app">
         <div class="container">
@@ -29,32 +40,37 @@
             <% @tasks.each do |task| %>
             <div class="row">
               <li><%= task.title %></a></li>
+            </div>
                 <% if @tasks.any? %>
-                <li><a href="#" class="like-button">Like</a></li>
+                <li><button class="like-button" name="like">Like</button></li>
                 <p class="like-count">0</p><p> Like</p>
                 <% end %>
               <% end %>
             </div>
           </div>
         </ul>
+
       </div>
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!--
       <script>
 
+
       $(document).ready(function() {
+
+
         $(".like-button").on('click', function(event){
           event.preventDefault();
-          likeCounter();
+
+          var likeCount = $(this).siblings('.like-count');
+
+          $.post(this.button, function(response){
+              likeCount.text(response.new_like_count);
+          });
+
         });
 
-        var counter = 0;
-        function likeCounter (){
-          counter++;
-          $(".like-count").text(counter);
-        }
       });
 
-      </script> -->
+      </script>
   </body>
 </html>

@@ -1,8 +1,8 @@
-.top-bar {
+/*.top-bar {
   background-color: #57e2ca;
   display: block;
   box-sizing: border-box;
-  height: 15%
+  height: 15%;
 }
 
 .middle-bar {
@@ -18,40 +18,42 @@
   font-weight: bold;
   color: white;
   text-align: left;
-  padding-top: 2%;
   padding-left: 12.5%;
+  position: absolute;
+  top: 4.5%;
+  text-decoration: none;
 }
 
 .form {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 12.5%;
 
 
 }
 
 .input{
-  width: 220%;
-  height: 50px;
+  width: 260%;
+  height: 45px;
   color: #282828;
   border: none;
   font-family: "AvenirLTStd-Book";
-  border-radius: 5px;
+  border-radius: 7.5px;
 }
 
 .post-button {
   color: #fff;
   width: 100%;
   border: none;
-  height: 50px;
+  height: 45px;
   box-shadow: none;
   text-shadow: none;
   background-image: none;
   background-color: #708a86;
-  border-radius: 5px;
+  border-radius: 7.5px;
   position: absolute;
   top: 0%;
-  left: 240%;
+  left: 270%;
   display:inline-block;
 }
 
@@ -62,7 +64,7 @@
   color: white;
   text-align: left;
   padding-top: 8%;
-  padding-left: 12.5%;
+  padding-left: 0%;
 }
 
 ::-webkit-input-placeholder{
@@ -72,21 +74,52 @@
 }
 
 .menu {
+  position: relative;
   font-family: "AvenirLTStd-Book";
-  position: absolute;
-  top: 7.5%;
-  right: 40%
+  left: 75%;
 }
 
 li {
   display: inline;
 }
 
-
-.like-button {
-
+.sub-title-bar {
+  width: 30%;
+  height: 20%;
+  position: absolute;
+  left: 12.5%;
+  top: 30%;
 }
 
-.like-count {
-
+.post-button {
+  font-family: "AvenirLTStd-Book";
+  font-size: 1.5em
 }
+
+#home-button {
+  margin-right: 5%;
+  /*color: white;
+  text-decoration: none;
+  font-size: 1em;*/
+}
+
+/*#about-button {
+  margin-right: 5%;
+  /*color: white;
+  text-decoration: none;
+  font-size: 1em;*/
+}*/
+
+/*#contact-button {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}*/
+
+/*.row {
+  background: salmon;
+  width: 80%;
+  height: 25%;
+  position: relative;
+  left: 10%;
+}*/

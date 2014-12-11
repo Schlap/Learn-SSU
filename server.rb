@@ -1,6 +1,7 @@
 require 'sinatra'
 
 require 'data_mapper'
+require 'json'
 
 env = ENV['RACK_ENV'] || 'development'
 
@@ -19,10 +20,25 @@ DataMapper.finalize
 # However, the database tables don't exist yet. Let's tell datamapper to create them
 DataMapper.auto_upgrade!
 
+
 get '/' do
   @tasks = Task.all
-  @likes = Like.all
   erb :index
+end
+
+post '/' do
+
+  erb :index
+end
+
+get '/contact' do
+
+  erb :contact
+end
+
+get '/about' do
+
+  erb :about
 end
 
 post '/tasks' do
