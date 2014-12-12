@@ -5,12 +5,10 @@ require 'json'
 
 env = ENV['RACK_ENV'] || 'development'
 
-# we're telling datamapper to use a postgres database on localhost. The name will be "streetsmarttaskboard_" or "streetsmarttaskboard_development" depending on the environment
-DataMapper.setup(:default, "postgres://localhost/streetsmarttaskboard_#{env}")
+# we're telling datamapper to use a postgres database on localhost. The name will be "learn_ssu_" or "learn_ssu_development" depending on the environment
+DataMapper.setup(:default, "postgres://localhost/learn_ssu_#{env}")
 
-require './lib/task' # this needs to be done after datamapper is initialised
-
-require './lib/tag' # this needs to be done after datamapper has initialised
+require './lib/post' # this needs to be done after datamapper is initialised
 
 require './lib/like'
 
@@ -22,12 +20,11 @@ DataMapper.auto_upgrade!
 
 
 get '/' do
-  @tasks = Task.all
+  @posts = Post.all
   erb :index
 end
 
 post '/' do
-
   erb :index
 end
 
@@ -41,8 +38,8 @@ get '/about' do
   erb :about
 end
 
-post '/tasks' do
+post '/posts' do
     title = params["title"]
-    Task.create(:title => title)
+    Post.create(:title => title)
     redirect('/')
 end

@@ -1,4 +1,4 @@
-class Task
+class Post
 
   include DataMapper::Resource
   # create a one to many relationship between tags and tasks
@@ -6,6 +6,5 @@ class Task
 
   property :id,           Serial
   property :title,        String
-  property :description,  String
 
 end

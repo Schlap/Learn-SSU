@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature 'liking post' do
   before(:each){
-    Task.create(:title => "Harro")
+    Post.create(:title => "Harro")
   }
 
   scenario 'when browsing the list of posts' do

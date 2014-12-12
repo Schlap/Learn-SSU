@@ -19,44 +19,66 @@
             </button>
               <div class="collapse navbar-collapse navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="/">Home</a></li>
+                  <li class ="active"><a href="/">Home</a></li>
                   <li><a href="/about">About Us</a></li>
+                  <li class = "dropdown">
+                    <a href="#" class="dropdown toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Facebook</a></li>
+                    </ul>
                   <li><a href="/contact">Contact</a></li>
                 </ul>
               </div>
+          </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <ul>
+              <% @posts.each do |post| %>
+              <div class="row">
+              <li><%= post.title %></a></li>
+              </div>
+              <% if @posts.any? %>
+              <li><button class="like-button" name="like">Like</button></li>
+              <p class="like-count">0</p><p> Like</p>
+              <% end %>
+              <% end %>
+            </div>
+          </div>
+        </ul>
+          </div>
+      </div>
+
+
+      <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+          <p class="navbar-text pull-left">Site built by Hadi</p>
+          <a href="/http://www.youtube.com/user/StreetSmartUni"class="navbar-btn btn btn-danger pull-right">Subscribe on youtube</a>
         </div>
       </div>
 
-    <!-- <div class="middle-bar">
+    <!--<div class="middle-bar">
       <div class="sub-title-bar">
         <p class="sub-title">Get a live feed of the SSU team's daily learnings.</p>
       </div>
     </div>
-        <form action="/tasks" method="post" class="form">
+        <form action="/posts" method="post" class="form">
           <input type="text" name="title" class="input">
-          <input type="submit" value="Learnt" class="post-button">
+          <input type="submit" value="Post" class="post-button">
         </form>
         <div
     </div>
       <div class="ssu-app">
         <div class="container">
-        <ul>
-            <% @tasks.each do |task| %>
-            <div class="row">
-              <li><%= task.title %></a></li>
-            </div>
-                <% if @tasks.any? %>
-                <li><button class="like-button" name="like">Like</button></li>
-                <p class="like-count">0</p><p> Like</p>
-                <% end %>
-              <% end %>
-            </div>
-          </div>
-        </ul>
+
 
       </div> -->
+
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="../public/js/bootstrap.js"></script>
+      <script src="/js/bootstrap.js"></script>
+
       <script>
 
 
