@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <title>SSU</title>
-
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   </head>
-  <meta name="viewport" content="width=device-width", initial-scale="1.0">
-  <link rel="stylesheet" type="text/css" href="/css/reset.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   <body>
       <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
@@ -31,26 +30,20 @@
               </div>
           </div>
       </div>
+      <form action="/posts" method="post" class="form">
+        <input type="text" name="title" class="input">
+        <input type="submit" value="Post" class="post-button">
+      </form>
 
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <ul>
-              <% @posts.each do |post| %>
-              <div class="row">
-              <li><%= post.title %></a></li>
-              </div>
-              <% if @posts.any? %>
-              <li><button class="like-button" name="like">Like</button></li>
-              <p class="like-count">0</p><p> Like</p>
-              <% end %>
-              <% end %>
-            </div>
+            <% @posts.reverse.each do |post| %>
+            <p class="post"><%= post.title %></p>
+            <% end %>
           </div>
-        </ul>
-          </div>
-      </div>
-
+        </div>
+      <div>
 
       <div class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container">
@@ -72,7 +65,10 @@
     </div>
       <div class="ssu-app">
         <div class="container">
-
+        <% if @posts.any? %>
+        <li><button class="like-button" name="like">Like</button></li>
+        <p class="like-count">0</p><p> Like</p>
+        <% end %>
 
       </div> -->
 
