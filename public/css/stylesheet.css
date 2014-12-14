@@ -1,3 +1,46 @@
+.navbar {
+  padding-top: 1.5%;
+
+}
+
+.navbar-right {
+  font-family: "Futura (Light)";
+  padding-right: 8.5%;
+
+}
+
+.navbar-static-top {
+  margin-bottom: 0%;
+}
+
+.post-button {
+  font-family: "Futura (Light)";
+  font-size: 200%;
+  border: none;
+  width: 10%;
+  height: 45px;
+  background-color: #708a86;
+  border-radius: 7.5px;
+  display:inline-block;
+}
+
+.input{
+  width: 25%;
+  height: 45px;
+  color: #282828;
+  border: none;
+  font-family: "AvenirLTStd-Book";
+  border-radius: 7.5px;
+}
+
+.form {
+  position: relative;
+  left: 12%;
+  padding-top: 18t%;
+}
+
+
+
 p.post {
   border: solid;
   position: relative;
@@ -6,19 +49,46 @@ p.post {
   padding: 20px;
 }
 
-/*.row {
+.navbar-brand {
   position: relative;
-  background: yellow;
-  min-height: 200px;
-  padding: 20px;
-}*/
+  left: 6.5%;
+  font-size: 3.5em;
+  font-family: "Futura (Light)"
+}
 
 .margin {
-  margin-left: 21%;
+  margin-left: 20%;
+}
+
+.slogan-page {
+  width: 100%;
+  padding-bottom: 50%;
+  background-color: salmon;
 }
 
 
+/*.post-button {
+  color: #fff;
+  width: 100%;
+  border: none;
+  height: 45px;
+  box-shadow: none;
+  text-shadow: none;
+  background-image: none;
+  background-color: #708a86;
+  border-radius: 7.5px;
+  position: absolute;
+  top: 0%;
+  left: 270%;
+  display:inline-block;
+}*/
 
+/*.row {
+position: relative;
+background: yellow;
+min-height: 200px;
+padding: 20px;
+}*/
 
 /*.top-bar {
   background-color: #57e2ca;
@@ -63,21 +133,7 @@ p.post {
   border-radius: 7.5px;
 }
 
-.post-button {
-  color: #fff;
-  width: 100%;
-  border: none;
-  height: 45px;
-  box-shadow: none;
-  text-shadow: none;
-  background-image: none;
-  background-color: #708a86;
-  border-radius: 7.5px;
-  position: absolute;
-  top: 0%;
-  left: 270%;
-  display:inline-block;
-}
+
 
 .sub-title {
   font-family: "AvenirLTStd-Book";
