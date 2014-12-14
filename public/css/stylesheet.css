@@ -22,7 +22,10 @@
   background-color: #708a86;
   border-radius: 7.5px;
   display:inline-block;
+  float: left;
+
 }
+
 
 .input{
   width: 25%;
@@ -31,12 +34,18 @@
   border: none;
   font-family: "AvenirLTStd-Book";
   border-radius: 7.5px;
+  float: left;
 }
+
+::-webkit-input-placeholder {
+  font-size: 1.5em;
+}
+
 
 .form {
   position: relative;
   left: 12%;
-  padding-top: 18t%;
+  padding-top: 18%;
 }
 
 
