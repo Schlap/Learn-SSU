@@ -37,11 +37,13 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-xs-10">
+            <div class="margin">
             <% @posts.reverse.each do |post| %>
             <p class="post"><%= post.title %></p>
             <% end %>
           </div>
+        </div>
         </div>
       <div>
 
