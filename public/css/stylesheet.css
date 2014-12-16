@@ -1,54 +1,69 @@
 .navbar {
   padding-top: 1.5%;
+}
 
+.navbar-brand {
+  position: relative;
+  left: 6.5%;
+  font-size: 3.5em;
+  font-family: "AvenirLTStd-Book";
 }
 
 .navbar-right {
-  font-family: "Futura (Light)";
+  font-family: "AvenirLTStd-Book";
   padding-right: 8.5%;
-
 }
 
 .navbar-static-top {
   margin-bottom: 0%;
 }
 
-.post-button {
-  font-family: "Futura (Light)";
-  font-size: 200%;
-  border: none;
-  width: 10%;
-  height: 45px;
-  background-color: #708a86;
-  border-radius: 7.5px;
-  display:inline-block;
-  float: left;
-
+.form-inline {
+  /*position: relative;
+  left: 12.5%;
+  padding-top: 18.5%;*/
 }
 
+.col-md-7 {
+  width: 58.33333;
+}
 
-.input{
-  width: 25%;
+.col-xs-12 {
+  width: 100%;
+}
+
+.input {
+  width: 70%;
   height: 45px;
   color: #282828;
   border: none;
   font-family: "AvenirLTStd-Book";
   border-radius: 7.5px;
-  float: left;
 }
+
+.btn {
+  color: #fff;
+  width: 10%;
+  border: none;
+  height: 45px;
+  box-shadow: none;
+  text-shadow: none;
+  background-image: none;
+  background-color: #708a86;
+  border-radius: 7.5px;
+  position: absolute;
+  display:inline-block;
+  margin-left: 1%;
+  font-size: 2em;
+  font-family: "AvenirLTStd-Book";
+
+}
+
+
 
 ::-webkit-input-placeholder {
   font-size: 1.5em;
 }
-
-
-.form {
-  position: relative;
-  left: 12%;
-  padding-top: 18%;
-}
-
-
 
 p.post {
   border: solid;
@@ -57,14 +72,6 @@ p.post {
   min-height: 150px;
   padding: 20px;
 }
-
-.navbar-brand {
-  position: relative;
-  left: 6.5%;
-  font-size: 3.5em;
-  font-family: "Futura (Light)"
-}
-
 .margin {
   margin-left: 20%;
 }
@@ -75,22 +82,27 @@ p.post {
   background-color: salmon;
 }
 
-
-/*.post-button {
-  color: #fff;
-  width: 100%;
-  border: none;
-  height: 45px;
-  box-shadow: none;
-  text-shadow: none;
-  background-image: none;
-  background-color: #708a86;
-  border-radius: 7.5px;
-  position: absolute;
-  top: 0%;
-  left: 270%;
-  display:inline-block;
+/*.form-control {
+width: 10%;
+height: 45px;
+color: #282828;
+border: none;
+font-family: "Futura (Light)";
+border-radius: 7.5px;
 }*/
+
+/*.btn {
+font-family: "Futura (Light)";
+font-size: 200%;
+border: none;
+width: 10%;
+height: 45px;
+background-color: #708a86;
+border-radius: 7.5px;
+display:inline-block;
+}*/
+
+
 
 /*.row {
 position: relative;
@@ -133,14 +145,7 @@ padding: 20px;
 
 }
 
-.input{
-  width: 260%;
-  height: 45px;
-  color: #282828;
-  border: none;
-  font-family: "AvenirLTStd-Book";
-  border-radius: 7.5px;
-}
+
 
 
 
