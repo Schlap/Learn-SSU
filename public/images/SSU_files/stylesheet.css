@@ -16,7 +16,6 @@
   left: 6.5%;
   font-size: 3.5em;
   font-family: "Futura (Light)";
-  color: white;
 }
 
 .navbar-right {
@@ -24,10 +23,6 @@
   font-family: "Futura (Light)";
   padding-right: 8.5%;
 
-}
-
-.navbar-nav>li>a:hover {
-  text-decoration: underline;
 }
 
 .navbar-nav li a {
@@ -47,15 +42,8 @@
 }
 .form-group {
   position: relative;
-  left: 55%;
+  left: 21.5%;
   margin-top: 31.5%;
-}
-
-.ssu-logo {
-  position: absolute;
-  top: 60%;
-  left: 30%;
-  width: 35%;
 }
 
 .col-md-7 {
@@ -72,7 +60,7 @@
 }
 
 .input {
-  width: 400px;
+  width: 300px;
   height: 45px;
   color: #282828;
   border: none;
@@ -82,9 +70,9 @@
 
 .slogan {
   position: absolute;
-  left: 23.5%;
+  left: 12%;
   font-family: "Futura (Light)";
-  font-size: 2.5em;
+  font-size: 2em;
   margin-top: 10%;
   color: white;
 }
@@ -122,7 +110,7 @@ p.post {
   min-height: 200px;
   padding: 20px;
   width: 125%;
-  margin-left: -15px;
+  padding-right: 0px;
   font-size: 1.25em;
   font-family: "Futura (Light)"
 }
