@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   </head>
   <body>
-      <div class="navbar navbar-white navbar-static-top">
+      <div class="navbar navbar-white navbar-fixed-top">
         <div class="container">
-          <a class="navbar-brand" href='/'>Learn SSU.</a>
+          <a class="navbar-brand" href='/'>Learn SSU</a>
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -18,14 +18,7 @@
             </button>
               <div class="collapse navbar-collapse navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/">Home</a></li>
                   <li><a href="/about">About Us</a></li>
-                  <li class = "dropdown">
-                    <a href="#" class="dropdown toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Facebook</a></li>
-                    </ul>
-                  <li><a href="/contact">Contact</a></li>
                 </ul>
               </div>
           </div>
@@ -35,22 +28,23 @@
 
       <div class="slogan-page">
         <div class="slogan">
-          <p>Get a live feed on the SSU team's daily learnings.<p>
+          <p>Get a live feed of the SSU team's daily learnings.<p>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="form-group">
-                  <form action="/posts" method="post" role="form" class="form-inline" role="form">
-                    <input type="text" name="title" class="input" placeholder=>
-                    <button type="submit" value="Post" class="btn btn-default">Post</button>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="form-group">
+                    <form action="/posts" method="post" role="form" class="form-inline" role="form">
+                      <input type="text" name="title" class="input" placeholder=" Enter your BEST learning...">
+                      <button type="submit" value="Post" class="btn btn-default">Post</button>
+                    </div>
                   </div>
-                </div>
-                </div>
-              </form>
+                  </div>
+                </form>
+              </div>
             </div>
-          </div>
+
         </div>
 
         <!-- <form class="form-inline" role="form" action="/posts" method="post">

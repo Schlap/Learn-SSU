@@ -11,7 +11,7 @@ feature 'User submits a new post' do
   end
 
   def add_post(title)
-    within('.new-post') do
+    within('.form-group') do
     fill_in 'title', :with => title
     click_button 'Post'
     end
