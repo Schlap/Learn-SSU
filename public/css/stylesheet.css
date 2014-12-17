@@ -1,65 +1,90 @@
 .navbar {
   padding-top: 1.5%;
+  background-color: #57e2ca;
+  border: none;
+}
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse {
+  border color: none;
 }
 
 .navbar-brand {
   position: relative;
   left: 6.5%;
   font-size: 3.5em;
-  font-family: "AvenirLTStd-Book";
+  font-family: "Futura (Light)";
 }
 
 .navbar-right {
-  font-family: "AvenirLTStd-Book";
+  color: white;
+  font-family: "Futura (Light)";
   padding-right: 8.5%;
+
 }
 
 .navbar-static-top {
   margin-bottom: 0%;
 }
 
-.form-inline {
-  /*position: relative;
-  left: 12.5%;
-  padding-top: 18.5%;*/
+.posts {
+ background-color: #F0F8FF;
+}
+.form-group {
+  position: relative;
+  left: 21.5%;
+  margin-top: 31.5%;
 }
 
 .col-md-7 {
-  width: 58.33333;
+  width: 58.33333%;
+  padding-right: 0%;
 }
 
 .col-xs-12 {
   width: 100%;
 }
 
+.row {
+  margin-right: 0px;
+}
+
 .input {
-  width: 70%;
+  width: 300px;
   height: 45px;
   color: #282828;
   border: none;
-  font-family: "AvenirLTStd-Book";
-  border-radius: 7.5px;
+  font-family: "Futura (Light)";
+  border-radius: 5px;
+}
+
+.slogan {
+  position: absolute;
+  left: 12%;
+  font-family: "Futura (Light)";
+  font-size: 2em;
+  margin-top: 10%;
+  color: white;
 }
 
 .btn {
   color: #fff;
-  width: 10%;
+  width: 100px;
   border: none;
   height: 45px;
   box-shadow: none;
   text-shadow: none;
   background-image: none;
   background-color: #708a86;
-  border-radius: 7.5px;
+  border-radius: 5px;
   position: absolute;
   display:inline-block;
-  margin-left: 1%;
+  margin-left: 1.5%;
   font-size: 2em;
-  font-family: "AvenirLTStd-Book";
-
+  font-family: "Futura (Light)";
 }
-
-
 
 ::-webkit-input-placeholder {
   font-size: 1.5em;
@@ -67,20 +92,30 @@
 
 p.post {
   border: solid;
+  border-width: 0.1em;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
   position: relative;
   background: #fff;
-  min-height: 150px;
+  min-height: 200px;
   padding: 20px;
+  width: 125%;
+  padding-right: 0px;
+  font-size: 1.25em;
+  font-family: "Futura (Light)"
 }
-.margin {
+/*.margin {
   margin-left: 20%;
-}
+}*/
 
 .slogan-page {
   width: 100%;
-  padding-bottom: 50%;
-  background-color: salmon;
+  height: 590px;
+  background-color: #57e2ca;
 }
+
 
 /*.form-control {
 width: 10%;
