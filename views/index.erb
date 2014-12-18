@@ -1,133 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SSU</title>
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Learn SSU</title>
+
+
+    <link rel="shortcut icon" href="/images/ssu-logo-2.ico" >
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   </head>
   <body>
-      <div class="navbar navbar-white navbar-fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href='/'>Learn SSU</a>
-            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-              <div class="collapse navbar-collapse navHeaderCollapse">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/about">About Us</a></li>
-                </ul>
-              </div>
-          </div>
-      </div>
 
+    <section class="navbar">
+        <ul class="menu">
+          <li id="header"><a href='/' id="decoration">Learn SSU</a></li>
+          <li id="about"><a href="/about" id="decoration">About Us</a></li>
+        </ul>
+    </section>
 
+      <section class="middle-section">
+        <p class="slogan">Get a live feed of the SSU team's daily learnings.<p>
+          <img src="/images/ssu-logo-2.png" class="ssu-logo"></img>
+          <form action="/posts" method="post" role="form" class="form-inline">
+            <input type="text" name="title" class="input" placeholder=" Enter your BEST learning...">
+            <button type="submit" value="Post" class="post-button">Post</button>
+          <form>
+      </section>
 
-      <div class="slogan-page">
-        <div class="slogan">
-          <p>Get a live feed of the SSU team's daily learnings.<p>
-        </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="form-group">
-                    <form action="/posts" method="post" role="form" class="form-inline" role="form">
-                      <input type="text" name="title" class="input" placeholder=" Enter your BEST learning...">
-                      <button type="submit" value="Post" class="btn btn-default">Post</button>
-                    </div>
-                  </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+      <section class="post-container">
+        <section class="posts">
+          <% @posts.reverse.each do |post| %>
+          <p class="individual-post"><%= post.title %></p>
+          <% end %>
+        </section>
+      </section>
 
-        </div>
-
-        <!-- <form class="form-inline" role="form" action="/posts" method="post">
-          <div class="form-group">
-            <div class="input-group">
-              <label class="sr-only" for="exampleInputEmail2">Email address</label>
-              <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Enter your learning of the day">
-            </div>
-          <button type="submit" class="btn btn-default">Post</button>
-        </form>
-      </div> -->
-
-
-     <div class="posts">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-10">
-            <div class="margin">
-            <% @posts.reverse.each do |post| %>
-            <p class="post"><%= post.title %></p>
-            <% end %>
-          </div>
-        </div>
-        </div>
-      <div>
-     </div>
-
-     <div class="ssu-logo">
-       <div class="container">
-         <img src="/images/ssu-logo-2.png"></img>
-
-       </div>
-     </div>
-
-      <!-- <div class="navbar navbar-inverse navbar-fixed-bottom">
-        <div class="container">
-          <p class="navbar-text pull-left">Site built by Hadi</p>
-          <a href="/http://www.youtube.com/user/StreetSmartUni"class="navbar-btn btn btn-danger pull-right">Subscribe on youtube</a>
-        </div>
-      </div> -->
-
-    <!--<div class="middle-bar">
-      <div class="sub-title-bar">
-        <p class="sub-title">Get a live feed of the SSU team's daily learnings.</p>
-      </div>
-    </div>
-        <form action="/posts" method="post" class="form">
-          <input type="text" name="title" class="input">
-          <input type="submit" value="Post" class="post-button">
-        </form>
-        <div
-    </div>
-      <div class="ssu-app">
-        <div class="container">
-        <% if @posts.any? %>
-        <li><button class="like-button" name="like">Like</button></li>
-        <p class="like-count">0</p><p> Like</p>
-        <% end %>
-
-      </div> -->
-
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="/js/bootstrap.js"></script>
-<!--
-      <script>
-
-
-      $(document).ready(function() {
-
-
-        $(".like-button").on('click', function(event){
-          event.preventDefault();
-
-          var likeCount = $(this).siblings('.like-count');
-
-          $.post(this.button, function(response){
-              likeCount.text(response.new_like_count);
-          });
-
-        });
-
-      });
-
-      </script> -->
   </body>
 </html>

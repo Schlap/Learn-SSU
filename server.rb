@@ -10,8 +10,6 @@ DataMapper.setup(:default, "postgres://localhost/learn_ssu_#{env}")
 
 require './lib/post' # this needs to be done after datamapper is initialised
 
-require './lib/like'
-
 # After declaring your models, you should finalise them
 DataMapper.finalize
 
@@ -24,17 +22,7 @@ get '/' do
   erb :index
 end
 
-post '/' do
-  erb :index
-end
-
-get '/contact' do
-
-  erb :contact
-end
-
 get '/about' do
-
   erb :about
 end
 

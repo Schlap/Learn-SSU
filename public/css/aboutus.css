@@ -1,0 +1,43 @@
+.ssu-team {
+  width: 100%;
+}
+
+.middle-section {
+  width: 100%;
+  height: 50%;
+  background-color: ;
+}
+
+.about-us {
+  width: 50%;
+  height: 100%;
+  background-color: #FAEBD7;
+  border: none;
+  margin-left: 25%;
+  font-weight: bold;
+
+}
+
+.title {
+  margin-left: 30.5%;
+  font-size: 1.2em;
+  position: relative;
+  top: 7.5%;
+}
+
+body {
+  font-family: "Futura (Light)"
+}
+
+.footer {
+  width: 100%;
+  height: 5%;
+  background-color: black;
+}
+
+.footer-memo {
+  color: white;
+  position: relative;
+  left: 39%;
+  top: 40%;
+}

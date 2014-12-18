@@ -1,4 +1,110 @@
+body {
+  font-family: "Futura (Light)";
+  font-size: 1em;
+
+}
+
 .navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #57e2ca;
+
+}
+
+.menu {
+  position: relative;
+  top: 45%;
+}
+
+li {
+  display: inline;
+
+}
+
+#header {
+  position: absolute;
+  left: 12.5%;
+  font-size: 2.5em;
+}
+
+#decoration {
+  color: white;
+  text-decoration: none;
+}
+
+#about {
+  position: absolute;
+  top: 12.5px;
+  left: 75%;
+}
+
+.middle-section {
+  width: 100%;
+  height: 600px;
+  background-color: #57e2ca;
+}
+
+.container {
+  padding: 10%;
+}
+
+.individual-post {
+  border: solid 0.1em;
+  /*border-left: none;
+  border-right: none;
+  border-top: none;*/
+  height: 200px;
+  padding: 2.5%;
+  padding-top: 10px;
+  font-size: 1em;
+}
+
+.slogan {
+  position: absolute;
+  left: 20%;
+  top: 190.5px;
+  font-size: 2.2em;
+  color: white;
+}
+
+.form-inline {
+  margin-top: 4.5%;
+  margin-left: 25%
+}
+
+.ssu-logo {
+  width: 30%;
+  position: relative;
+  top: 360px;
+  left: 400px;
+}
+
+.input {
+  width: 50%;
+  height: 45px;
+  color: #282828;
+  border: none;
+  font-family: "Futura (Light)";
+  border-radius: 5px;
+}
+
+.post-button {
+  color: #fff;
+  width: 100px;
+  border: none;
+  height: 45px;
+  box-shadow: none;
+  text-shadow: none;
+  background-image: none;
+  background-color: #708a86;
+  border-radius: 5px;
+  position: absolute;
+  display:inline-block;
+  margin-left: 1.5%;
+  font-size: 2em;
+  font-family: "Futura (Light)";
+}
+/*.navbar {
   padding-top: 2%;
   padding-bottom: 1.5%;
   background-color: #57e2ca;
@@ -6,6 +112,7 @@
 }
 .navbar-default .navbar-brand {
   color: white;
+  position: relative;
 }
 
 a:-webkit-any-link {
@@ -23,13 +130,13 @@ a:-webkit-any-link {
   font-size: 3.5em;
   font-family: "Futura (Light)";
   color: white;
+  text-decoration: none;
 }
 
 .navbar-right {
   color: white;
   font-family: "Futura (Light)";
   padding-right: 8.5%;
-
 }
 
 .navbar-nav>li>a:hover {
@@ -84,14 +191,6 @@ a:-webkit-any-link {
   color: white;
 }
 
-/*.line {
-  position: absolute;
-  top: 92.1%;
-  width: 100%;
-  height: 0.25%;
-  background-color: black;
-}*/
-
 .btn {
   color: #fff;
   width: 100px;
@@ -134,7 +233,7 @@ p.post {
   width: 100%;
   height: 655px;
   background-color: #57e2ca;
-}
+}*/
 
 
 /*.form-control {
